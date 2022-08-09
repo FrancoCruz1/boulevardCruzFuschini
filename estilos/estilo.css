@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:wght@100&family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@500&family=Rubik:wght@300&family=Source+Sans+Pro:wght@300&family=Titillium+Web:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "header"
+        "introduccion"
+        "presentacion"
+        "footer"
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: introduccion;
+}
+
+section{
+    grid-area: presentacion;
+}
+
+footer{
+    grid-area: footer;
+}
+
+header{
+    background-color: rgb(226, 140, 79);
+    padding: 3rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 30vh;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+nav ul img{
+    width: 10rem;
+    height: 10rem;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+    padding: 2rem;
+    color:rgb(75, 25, 2);
+    font-size: 1.7rem;
+}
+
+
+body{
+    background-color: seashell;
+}
+
+
+.boulevard{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "frase"
+        "somos"
+        "introduccion"
+    ;
+    
+}
+
+main h1{
+    grid-area: frase;
+}
+
+main h2{
+    grid-area: somos;
+}
+
+main p{
+    font-size: 3rem;
+    margin: 2rem;
+    font-weight: 400;
+    grid-area: introduccion;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section .actividades{
+    display: grid;
+    grid-template-columns: 30vh;
+    grid-template-areas: 
+            "musculacion"
+            "funcional"
+            "spinning"
+    ;
+    justify-content: center;
+}
+
+.actividades .musculacion{
+    grid-area: musculacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.actividades .funcional{
+    grid-area: funcional;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actividades .spinning{
+    grid-area: spinning;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+
+footer{
+    grid-area: footer;
+    background-color: rgb(226, 140, 79);
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.horario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+}
+.numero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+h1{
+    color: rgb(177, 74, 5);
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 4rem;
+    font-size: 4.5rem;
+}
+
+h2{
+    color: rgb(87, 33, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    border: 1rem;
+    margin: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h3{
+    color: rgb(184, 54, 40);
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    padding: 3rem;
+    border: 1.5rem;
+    margin: 2rem;
+}
+
+h4{
+    color: rgb(97, 3, 3);
+    font-family: 'Titillium', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+    
+p{
+    font-family: 'Montserrat', sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+   
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+.color {
+    color: orangered;
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+ul li{
+    list-style: none;
+}
+
+.actividadMusculacion{
+    text-align: center;
+    padding: 3rem;
+    border: 2rem;
+    margin: 2rem;
+}
+
+.zonas{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.circle{
+    list-style-type: circle;
+    margin: 1.5rem;
+}
+
+
+
+.gimnasio{
+    display: grid;
+    grid-template-areas: 
+        "imgGimnasio1"
+        "imgGimnasio2"
+        "imgGimnasio3"
+        "imgGimnasio4"
+    ;
+    margin: 1rem;
+    justify-content: center;
+
+}
+
+.imgGimnasio1{
+    grid-area: imgGimnasio1;
+    margin: 3rem;
+    width: 80%;
+    height: 80%;
+}
+
+.imgGimnasio2{
+    grid-area: imgGimnasio2;
+    margin: 3rem;
+    width: 80%;
+    height: 80%;
+}
+
+.imgGimnasio3{
+    grid-area: imgGimnasio3;
+    margin: 3rem;
+    width: 80%;
+    height: 80%;
+}
+
+.imgGimnasio4{
+    grid-area: imgGimnasio4;
+    margin: 3rem;
+    width: 80%;
+    height: 80%;
+}
+
+.formulario{
+    padding: 4rem;
+    border: 1.5rem;
+    margin: 3rem;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 5rem;
+    border: 1.5rem;
+    margin: 1rem;
+}
+
+.proteina{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    padding: 3rem;
+    border: 2rem;
+    margin: 4rem;
+}
+
+.imgProteina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.creatina{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    padding: 3rem;
+    border: 2rem;
+    margin: 4rem;
+}
+
+.imgCreatina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.shaker{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    padding: 3rem;
+    border: 2rem;
+    margin: 4rem;
+}
+
+.imgShaker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 7rem;
+}
+
+@media screen and (min-width: 600px) {
+
+    header{
+        background-color: rgb(226, 140, 79);
+        padding: 3rem;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 600;
+        display: grid;
+
+    }
+
+    header nav{
+        display: grid;
+        grid-template-columns: 50vh;
+        justify-content: center;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav ul img{
+        width: 15rem;
+        height: 15rem;
+        grid-area: logo;
+    }
+    
+    ul li{
+        list-style-type: none;
+        margin: 2rem;
+    }
+   
+
+    section .actividades{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3rem;
+        margin: 5rem;
+    }
+    
+    .actividades .musculacion{
+        width: 20vh;
+        height: 20vh;
+        margin-bottom: 3rem;
+    }
+    .actividades .funcional{
+        width: 20vh;
+        height: 20vh;
+        margin-bottom: 3rem;
+    }
+    .actividades .spinning{
+        width: 20vh;
+        height: 20vh;
+        margin-bottom: 3rem;
+    }
+
+    .proteina{
+        display: grid;
+        grid-template-columns: 35vh 35vh;
+        grid-template-rows: 60vh 60vh 60vh 60vh;
+        justify-content: space-around;
+        padding: 3rem;
+        border: 2rem;
+        margin: 4rem;
+    }
+
+    .imgProteina{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem;
+        padding: 4rem;
+    }
+
+    .creatina{
+        display: grid;
+        grid-template-columns: 35vh 35vh;
+        grid-template-rows: 60vh 60vh;
+        justify-content: space-around;
+        padding: 3rem;
+        border: 2rem;
+    }
+    
+    .imgCreatina{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 4rem;
+    }
+    
+    .shaker{
+        display: grid;
+        grid-template-columns: 35vh 35vh;
+        grid-template-rows: 60vh 60vh;
+        justify-content: space-around;
+        padding: 3rem;
+    }
+    
+    .imgShaker{
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+    }
+
+    h4{
+        color: rgb(97, 3, 3);
+        font-family: 'Titillium', sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
+
+   .gimnasio{
+    display: grid;
+    grid-template-columns: 50vh 50vh;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: 
+    "imgGimnasio1  imgGimnasio2"
+    "imgGimnasio3  imgGimnasio4"    
+    ;
+   }
+
+   .zonas{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    }
+
+    .proteina{
+        display: grid;
+        grid-template-columns: 40vh 40vh 40vh 40vh;
+        grid-template-rows: 70vh 70vh;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+
+    .imgProteina{
+        display: flex;
+        flex-direction: column;
+        margin: 6rem;
+        padding: 3rem;
+        
+    }
+
+    .creatina{
+        display: grid;
+        grid-template-columns: 35vh 35vh 35vh 35vh;
+        grid-template-rows: 70vh;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    
+    .imgCreatina{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+    
+    .shaker{
+        display: grid;
+        grid-template-columns: 35vh 35vh 35vh 35vh;
+        grid-template-rows: 70vh;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+    
+    .imgShaker{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    h4{
+        color: rgb(97, 3, 3);
+        font-family: 'Titillium', sans-serif;
+        font-size: 1.6rem;
+        text-align: left;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+
+    main p{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
