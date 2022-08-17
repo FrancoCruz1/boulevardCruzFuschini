@@ -8,84 +8,49 @@ html{
     font-size: 62.5%;
 }
 
-.cuerpo{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-        "header"
-        "introduccion"
-        "presentacion"
-        "footer"
-    ;
-}
-
 header{
-    grid-area: header;
+    background-image: linear-gradient(0, #212a2b 0, #1c2020 25%, #161515 50%, #0f0505 75%, #060000 100%);
 }
 
-main{
-    grid-area: introduccion;
-}
-
-section{
-    grid-area: presentacion;
-}
-
-footer{
-    grid-area: footer;
-}
-
-header{
-    background-image: linear-gradient(10deg, #ffb200 0, #ff9e00 16.67%, #ff8700 33.33%, #f27010 50%, #e2591c 66.67%, #d34524 83.33%, #c6322a 100%);
-    padding: 3rem;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header h1{
+    color: rgb(236, 233, 232);
+    font-family: 'Rubik', sans-serif;
     text-align: center;
+    padding: 4rem;
+    font-size: 4.5rem;
 }
 
-nav ul img{
-    width: 10rem;
-    height: 10rem;
+header h2{
+    color: rgb(236, 233, 232);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 4rem;
+    font-size: 4.5rem;
 }
 
-ul li{
-    list-style-type: none;
-    margin: 2rem;
+.navegador{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-a {
-    text-decoration: none;
-    padding: 2rem;
-    color:rgb(75, 25, 2);
-    font-size: 1.7rem;
+.logo{
+    width: 12rem;
+    height: 12rem;
 }
-
 
 body{
-    background-color: seashell;
+    background-color: #1c2020;
 }
 
-
-.boulevard{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-        "frase"
-        "somos"
-        "imgIntro"
-    ;
-    
+header div p{
+    text-align: center;
+    padding-bottom: 4rem;
+    font-size: 3rem;
 }
 
 a .imgBoulevard{
-    margin: 4rem;
+    margin: 2rem;
     transition: height 1s, width 1s;
 }
 
@@ -94,58 +59,17 @@ a:hover .imgBoulevard {
     width: 7rem;
 }
 
-.boulevard h1{
-    grid-area: frase;
-}
-
-.boulevard h2{
-    grid-area: somos;
-}
-
-.boulevard .imgIntro{
-    grid-area: imgIntro;
-    display: flex;
-    flex-direction: column;
-    align-items:  center;
-    
-}
-
-.imgIntro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.imgIntro div img{
-    width: 30vh;
-    height: 30vh;
-    margin: 5rem;
-}
-
-
-section .actividades{
+.actividades{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 3rem;
 }
 
-.actividades .musculacion{
-    margin: 5rem;
-}
 
-.actividades .funcional{
-    margin: 5rem;
-}
-
-.actividades .spinning{
-    margin: 5rem;
-}
- 
 footer{
     grid-area: footer;
-    background-image: linear-gradient(10deg, #ffb200 0, #ff9e00 16.67%, #ff8700 33.33%, #f27010 50%, #e2591c 66.67%, #d34524 83.33%, #c6322a 100%);
+    background-image: linear-gradient(0, #212a2b 0, #1c2020 25%, #161515 50%, #0f0505 75%, #060000 100%);
     font-family: 'Kanit', sans-serif;
     font-size: 3rem;
     display: flex;
@@ -179,8 +103,9 @@ footer{
     margin: 2rem;
 }
 
+
 h1{
-    color: rgb(177, 74, 5);
+    color: rgb(224, 61, 7);
     font-family: 'Rubik', sans-serif;
     text-align: center;
     padding: 4rem;
@@ -188,7 +113,7 @@ h1{
 }
 
 h2{
-    color: rgb(87, 33, 1);
+    color: rgb(192, 187, 183);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 2rem;
@@ -215,6 +140,12 @@ h4{
     text-align: center;
 }
 
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .subtitulo{
     display: flex;
     flex-direction: row;
@@ -227,6 +158,7 @@ p{
     font-style: normal;
     font-weight: 400;
     font-size: 2.5rem;
+    color: aliceblue;
    
 }
 
@@ -236,9 +168,9 @@ li{
 }
 
 .color {
-    color: orangered;
+    color: rgb(184, 180, 177);
     font-size: 6rem;
-    font-weight: 300;
+    font-weight: 800;
 }
 
 ul li{
@@ -257,8 +189,9 @@ ul li{
 
 .circle{
     font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
+    color: aliceblue;
 }
 
 .actividadMusculacion{
@@ -266,63 +199,6 @@ ul li{
     padding: 3rem;
     border: 2rem;
     margin: 2rem;
-}
-
-
-
-
-
-
-.gimnasio{
-    display: grid;
-    grid-template-areas: 
-        "imgGimnasio1"
-        "imgGimnasio2"
-        "imgGimnasio3"
-        "imgGimnasio4"
-    ;
-    margin: 1rem;
-    justify-content: center;
-
-}
-
-.imgGimnasio1{
-    grid-area: imgGimnasio1;
-    margin: 3rem;
-    width: 80%;
-    height: 80%;
-}
-
-.imgGimnasio2{
-    grid-area: imgGimnasio2;
-    margin: 3rem;
-    width: 80%;
-    height: 80%;
-}
-
-.imgGimnasio3{
-    grid-area: imgGimnasio3;
-    margin: 3rem;
-    width: 80%;
-    height: 80%;
-}
-
-.imgGimnasio4{
-    grid-area: imgGimnasio4;
-    margin: 3rem;
-    width: 80%;
-    height: 80%;
-}
-
-.funcional{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem;
-}
-
-.funcional img{
-    margin: 3rem;
 }
 
 .spinning{
@@ -335,26 +211,25 @@ ul li{
     margin: 3rem;
 }
 
+.contacto {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 6rem;
+}
 
 .formulario{
-    padding: 4rem;
-    border: 1.5rem;
-    margin: 3rem;
-    font-size: 3rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.font{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.contacto {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 5rem;
-    border: 1.5rem;
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    font-size: 3rem ;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+    width: 70rem;
+    height: 40rem;
 }
 
 .proteina{
@@ -408,26 +283,20 @@ ul li{
     margin: 7rem;
 }
 
+.boton{
+    margin: 2rem;
+}
+
+.tarjetas{
+    height: 50rem;
+}
+
+
+
 @media screen and (min-width: 600px) {
 
     header{
-        background-image: linear-gradient(10deg, #ffb200 0, #ff9e00 16.67%, #ff8700 33.33%, #f27010 50%, #e2591c 66.67%, #d34524 83.33%, #c6322a 100%);
-        padding: 3rem;
-        font-family: 'Kanit', sans-serif;
-        font-weight: 600;
-    }
-    
-    nav ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    ul .navegador{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        
+        background-image: linear-gradient(0, #212a2b 0, #1c2020 25%, #161515 50%, #0f0505 75%, #060000 100%);
     }
 
     nav ul img{
@@ -451,43 +320,20 @@ ul li{
         width: 7rem;
     }
 
-    .boulevard .imgIntro{
-        display: grid;
-        grid-template-columns: 60%;
-        grid-template-rows: 50%; 
-        align-items:  center;  
-        justify-content: center; 
-        margin-top: 2rem;
-    }
-
-    .imgIntro div img{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 25vh;
-        height: 25vh;
-        margin: 4rem;
-    }
-
     .actividades{
-        margin: 6rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 3rem;
+        justify-content: space-around;
+    }
+
+
+    .altura{
+        height: 60rem;
     }
     
-    .actividades .musculacion{
-        width: 20vh;
-        height: 20vh;
-        margin: 3rem;
-    }
-    .actividades .funcional{
-        width: 20vh;
-        height: 20vh;
-        margin: 3rem;
-    }
-    .actividades .spinning{
-        width: 20vh;
-        height: 20vh;
-        margin: 3rem;
-    }
+  
 
     .proteina{
         display: grid;
@@ -562,18 +408,19 @@ ul li{
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1150px) {
 
     a .imgBoulevard{
-        margin: 4rem;
+        margin: 2rem;
         transition: height 1s, width 1s;
     }
 
     a:hover .imgBoulevard {
-        height: 7rem;
-        width: 7rem;
+        height: 8rem;
+        width: 8rem;
     }
 
+   
     .imgIntro div{
         display: flex;
         flex-direction: row;
@@ -581,96 +428,6 @@ ul li{
         align-items: center;
     }
     
-    section .actividades{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-   .gimnasio{
-    display: grid;
-    grid-template-columns: 50vh 50vh;
-    grid-template-rows: 50vh 50vh;
-    grid-template-areas: 
-    "imgGimnasio1  imgGimnasio2"
-    "imgGimnasio3  imgGimnasio4"    
-    ;
-   }
-
- 
-    .proteina{
-        display: grid;
-        grid-template-columns: 40vh 40vh 40vh;
-        grid-template-rows: 70vh 70vh;
-        justify-content: space-around;
-        margin: 3rem;
-    }
-
-    .imgProteina{
-        display: flex;
-        flex-direction: column;
-        margin: 6rem;
-        padding: 3rem;
-    }
-
-    .imgProteina img{
-        transition: height 1s, width 1s;
-    }
-
-    .imgProteina:hover img{
-        height: 20rem;
-        width: 20rem;
-    }
-
-    .creatina{
-        display: grid;
-        grid-template-columns: 35vh 35vh 35vh;
-        grid-template-rows: 70vh;
-        justify-content: space-around;
-        margin: 3rem;
-    }
-    
-    .imgCreatina{
-        display: flex;
-        flex-direction: column;
-        margin: 3rem;
-    }
-
-    .imgCreatina img{
-        transition: height 1s, width 1s;
-    }
-
-    .imgCreatina:hover img{
-        height: 20rem;
-        width: 20rem;
-    }
-
-    
-    .shaker{
-        display: grid;
-        grid-template-columns: 35vh 35vh 35vh;
-        grid-template-rows: 70vh;
-        justify-content: space-around;
-        margin: 3rem;
-    }
-    
-    .imgShaker{
-        display: flex;
-        flex-direction: column;
-        margin: 3rem;
-    }
-
-    .imgShaker img{
-        transition: height 1s, width 1s;
-    }
-
-    .imgShaker:hover img{
-        height: 20rem;
-        width: 20rem;
-    }
-
-
     h4{
         color: rgb(97, 3, 3);
         font-family: 'Titillium', sans-serif;
@@ -681,7 +438,7 @@ ul li{
 
     p {
         font-family: 'Rubik', sans-serif;
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         margin: 4rem;
     }
 
@@ -709,8 +466,13 @@ ul li{
         text-align: center;
     }
 
-    
+    .altura{
+        height: 30rem;
+    }
 
+    .alturaInicio{
+        height: 60rem;  
+    }
 }
 
 
