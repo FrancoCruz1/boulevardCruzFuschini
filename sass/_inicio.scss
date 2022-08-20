@@ -1,0 +1,59 @@
+a .imgBoulevard{
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem;
+    transition: height 1s, width 1s;
+}
+
+a:hover .imgBoulevard {
+    height: 7rem;
+    width: 7rem;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+
+    a .imgBoulevard{
+        margin: 4rem;
+        transition: height 1s, width 1s;
+    }
+
+    a:hover .imgBoulevard {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .altura{
+        height: 60rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    a .imgBoulevard{
+        margin: 2rem;
+        transition: height 1s, width 1s;
+    }
+
+    a:hover .imgBoulevard {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .imgIntro div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .altura{
+        height: 30rem;
+    }
+
+    .alturaInicio{
+        height: 60rem;  
+    }
+}

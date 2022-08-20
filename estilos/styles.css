@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Lato:wght@100&family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@500&family=Rubik:wght@300&family=Source+Sans+Pro:wght@300&family=Titillium+Web:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #b9b9b9;
+}
+header h1 {
+  color: rgb(26, 25, 25);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  padding: 4rem;
+  font-size: 4.5rem;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: inicio;
+          animation-name: inicio;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+header h2 {
+  color: rgb(26, 25, 25);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 4rem;
+  font-size: 4.5rem;
+}
+header div p {
+  text-align: center;
+  padding-bottom: 4rem;
+  font-size: 3rem;
+  color: #0f0505;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: inicio;
+          animation-name: inicio;
+  -webkit-animation-iteration-count: alternate;
+          animation-iteration-count: alternate;
+}
+@-webkit-keyframes inicio {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes inicio {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navegador {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo {
+  width: 12rem;
+  height: 12rem;
+}
+
+body {
+  background-color: #1c2020;
+}
+
+footer {
+  background-color: #b9b9b9;
+  font-family: "Kanit", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.horario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.numero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem;
+}
+
+h1 {
+  color: rgb(224, 61, 7);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  padding: 4rem;
+  font-size: 4.5rem;
+}
+
+h2 {
+  color: rgb(192, 187, 183);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 2rem;
+  border: 1rem;
+  margin: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  color: rgb(184, 54, 40);
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  padding: 3rem;
+  border: 1.5rem;
+  margin: 2rem;
+}
+
+h4 {
+  color: rgb(97, 3, 3);
+  font-family: "Titillium", sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: aliceblue;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    background-color: #0f0505;
+  }
+  header h1 {
+    color: rgb(236, 233, 232);
+  }
+  header h2 {
+    color: rgb(236, 233, 232);
+  }
+  header div p {
+    color: rgb(236, 233, 232);
+  }
+  footer {
+    background-color: #0f0505;
+  }
+  nav ul img {
+    width: 15rem;
+    height: 15rem;
+    grid-area: logo;
+  }
+  nav ul li {
+    list-style-type: none;
+    margin: 2rem;
+  }
+  h4 {
+    color: rgb(97, 3, 3);
+    font-family: "Titillium", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1150px) {
+  header {
+    background-color: #0f0505;
+  }
+  h4 {
+    color: rgb(97, 3, 3);
+    font-family: "Titillium", sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: 300;
+  }
+  p {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.7rem;
+    margin: 4rem;
+  }
+}
+a .imgBoulevard {
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem;
+  transition: height 1s, width 1s;
+}
+
+a:hover .imgBoulevard {
+  height: 7rem;
+  width: 7rem;
+}
+
+@media screen and (min-width: 600px) {
+  a .imgBoulevard {
+    margin: 4rem;
+    transition: height 1s, width 1s;
+  }
+  a:hover .imgBoulevard {
+    height: 7rem;
+    width: 7rem;
+  }
+  .altura {
+    height: 60rem;
+  }
+}
+@media screen and (min-width: 1150px) {
+  a .imgBoulevard {
+    margin: 2rem;
+    transition: height 1s, width 1s;
+  }
+  a:hover .imgBoulevard {
+    height: 8rem;
+    width: 8rem;
+  }
+  .imgIntro div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .altura {
+    height: 30rem;
+  }
+  .alturaInicio {
+    height: 60rem;
+  }
+}
+.color {
+  color: rgb(184, 180, 177);
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.actividadMusculacion {
+  text-align: center;
+  padding: 3rem;
+  border: 2rem;
+  margin: 2rem;
+}
+
+.spinning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.spinning iframe {
+  margin: 3rem;
+}
+
+.producto {
+  margin-bottom: 3rem;
+  background-color: rgb(24, 23, 23);
+}
+
+.boton {
+  margin: 2rem;
+  background-color: black;
+}
+
+.info {
+  background-color: rgb(24, 23, 23);
+}
+
+.tarjeta {
+  background-color: rgb(92, 39, 2);
+}
+
+.contacto {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 6rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  font-size: 3rem;
+  color: aliceblue;
+  font-family: "Rubik", sans-serif;
+  width: 70rem;
+  height: 40rem;
+}
+
+@media screen and (min-width: 1150px) {
+  main p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */

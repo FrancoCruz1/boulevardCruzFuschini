@@ -1,0 +1,30 @@
+.color {
+    color: rgb(184, 180, 177);
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.actividadMusculacion{
+    text-align: center;
+    padding: 3rem;
+    border: 2rem;
+    margin: 2rem;
+}
+
+.spinning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+.spinning iframe{
+    margin: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 1150px) {
+    
+}
