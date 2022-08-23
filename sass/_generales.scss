@@ -9,14 +9,14 @@ html{
 }
 
 header{
-    background-color: #b9b9b9;
+    background-color: #f3f1f1;
     h1{
         color: rgb(26, 25, 25);
         font-family: 'Rubik', sans-serif;
         text-align: center;
         padding: 4rem;
         font-size: 4.5rem;
-        animation-duration: 3s;
+        animation-duration: 10s;
         animation-name: inicio;
         animation-iteration-count: infinite;
         
@@ -33,9 +33,6 @@ header{
         padding-bottom: 4rem;
         font-size: 3rem;
         color: #0f0505;
-        animation-duration: 3s;
-        animation-name: inicio;
-        animation-iteration-count: alternate;
     }
     @keyframes inicio {
         

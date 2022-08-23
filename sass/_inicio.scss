@@ -1,26 +1,29 @@
-a .imgBoulevard{
+a .imgActividades{
     height: 10rem;
     width: 10rem;
     margin: 2rem;
     transition: height 1s, width 1s;
 }
 
-a:hover .imgBoulevard {
+a:hover .imgActividades {
     height: 7rem;
     width: 7rem;
 }
 
+.imgBoulevard{
+    margin: 6rem;
+}
 
 
 
 @media screen and (min-width: 600px) {
 
-    a .imgBoulevard{
+    a .imgActividades{
         margin: 4rem;
         transition: height 1s, width 1s;
     }
 
-    a:hover .imgBoulevard {
+    a:hover .imgActividades {
         height: 7rem;
         width: 7rem;
     }
@@ -28,16 +31,24 @@ a:hover .imgBoulevard {
     .altura{
         height: 60rem;
     }
+
+    div{
+        .margen{
+            p{
+                font-size: 5rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1150px) {
 
-    a .imgBoulevard{
+    a .imgActividades{
         margin: 2rem;
         transition: height 1s, width 1s;
     }
 
-    a:hover .imgBoulevard {
+    a:hover .imgActividades {
         height: 8rem;
         width: 8rem;
     }
@@ -55,5 +66,13 @@ a:hover .imgBoulevard {
 
     .alturaInicio{
         height: 60rem;  
+    }
+
+    div{
+        .margen{
+            p{
+                font-size: 2.5rem;
+            }
+        }
     }
 }

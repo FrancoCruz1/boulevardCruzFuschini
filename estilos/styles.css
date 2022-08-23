@@ -9,7 +9,7 @@ html {
 }
 
 header {
-  background-color: #b9b9b9;
+  background-color: #f3f1f1;
 }
 header h1 {
   color: rgb(26, 25, 25);
@@ -17,8 +17,8 @@ header h1 {
   text-align: center;
   padding: 4rem;
   font-size: 4.5rem;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
   -webkit-animation-name: inicio;
           animation-name: inicio;
   -webkit-animation-iteration-count: infinite;
@@ -36,12 +36,6 @@ header div p {
   padding-bottom: 4rem;
   font-size: 3rem;
   color: #0f0505;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: inicio;
-          animation-name: inicio;
-  -webkit-animation-iteration-count: alternate;
-          animation-iteration-count: alternate;
 }
 @-webkit-keyframes inicio {
   0% {
@@ -209,37 +203,44 @@ p {
     margin: 4rem;
   }
 }
-a .imgBoulevard {
+a .imgActividades {
   height: 10rem;
   width: 10rem;
   margin: 2rem;
   transition: height 1s, width 1s;
 }
 
-a:hover .imgBoulevard {
+a:hover .imgActividades {
   height: 7rem;
   width: 7rem;
 }
 
+.imgBoulevard {
+  margin: 6rem;
+}
+
 @media screen and (min-width: 600px) {
-  a .imgBoulevard {
+  a .imgActividades {
     margin: 4rem;
     transition: height 1s, width 1s;
   }
-  a:hover .imgBoulevard {
+  a:hover .imgActividades {
     height: 7rem;
     width: 7rem;
   }
   .altura {
     height: 60rem;
   }
+  div .margen p {
+    font-size: 5rem;
+  }
 }
 @media screen and (min-width: 1150px) {
-  a .imgBoulevard {
+  a .imgActividades {
     margin: 2rem;
     transition: height 1s, width 1s;
   }
-  a:hover .imgBoulevard {
+  a:hover .imgActividades {
     height: 8rem;
     width: 8rem;
   }
@@ -254,6 +255,9 @@ a:hover .imgBoulevard {
   }
   .alturaInicio {
     height: 60rem;
+  }
+  div .margen p {
+    font-size: 2.5rem;
   }
 }
 .color {
@@ -278,6 +282,11 @@ a:hover .imgBoulevard {
 
 .spinning iframe {
   margin: 3rem;
+}
+
+.margen {
+  margin-bottom: 20rem;
+  margin-top: 10rem;
 }
 
 .producto {
