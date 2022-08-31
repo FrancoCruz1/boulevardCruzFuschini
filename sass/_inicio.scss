@@ -14,6 +14,34 @@ a:hover .imgActividades {
     margin: 6rem;
 }
 
+.margen{
+    p{
+        background-color: #e78718;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(71, 47, 3);
+    }
+}
+
+.album{
+    background-color: #f1ba7b;
+    margin-bottom: $margenTB;
+    h2{
+        color: black
+    }
+}
+
+@mixin margen ($margenTB, $margenRL) {
+    margin-top: $margenTB;
+    margin-bottom: $margenRL;
+}
+
+.foto{
+    @extend .album;
+    border: 3px solid orangered;
+    @include margen (8rem, 8rem);
+}
 
 
 @media screen and (min-width: 600px) {
@@ -30,14 +58,6 @@ a:hover .imgActividades {
 
     .altura{
         height: 60rem;
-    }
-
-    div{
-        .margen{
-            p{
-                font-size: 5rem;
-            }
-        }
     }
 }
 
@@ -68,11 +88,5 @@ a:hover .imgActividades {
         height: 60rem;  
     }
 
-    div{
-        .margen{
-            p{
-                font-size: 2.5rem;
-            }
-        }
-    }
+    
 }
