@@ -1,16 +1,19 @@
 .color {
-    color: rgb(184, 180, 177);
-    font-size: 6rem;
+    color: rgb(175, 79, 6);
+    font-size: 3.5rem;
     font-weight: 800;
 }
 
 .actividadMusculacion{
     text-align: center;
-    padding: 3rem;
-    border: 2rem;
     margin: 2rem;
 }
 
+
+
+section{
+    @include margen (20rem, 20rem);
+}
 
 .margen{
     margin-bottom: 20rem;
