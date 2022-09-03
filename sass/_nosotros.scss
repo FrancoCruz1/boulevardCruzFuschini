@@ -1,10 +1,25 @@
-main{
-   
-    .nosotros{
-        font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
-        margin: 5rem;
-        color: black;
-    }
-}
 
+    .nosotros{
+            font-family: 'Roboto', sans-serif;
+            font-size: 4rem;
+            color: rgb(0, 0, 0);  
+    }
+
+    .album{
+        background-color: #f1ba7b;
+        margin-bottom: $margenTB;
+        h2{
+            color: black
+        }
+    }
+    
+    @mixin margen ($margenTB, $margenRL) {
+        margin-top: $margenTB;
+        margin-bottom: $margenRL;
+    }
+    
+    .foto{
+        @extend .album;
+        border: 3px solid orangered;
+        @include margen (8rem, 8rem);
+    }

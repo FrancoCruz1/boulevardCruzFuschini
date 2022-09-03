@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Kanit:wght@800&family=Roboto:wght@300&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Kanit:wght@800&family=Pacifico&family=Roboto:wght@300&family=Titillium+Web&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +9,11 @@ html {
 }
 
 header {
-  background-color: #f5dbb4;
+  background-color: #f18306;
 }
 header h1 {
   color: rgb(255, 255, 255);
-  background-color: #e78718;
+  background-color: #000000;
   font-family: "Kanit", sans-serif;
   text-align: center;
   padding: 4rem;
@@ -30,21 +30,29 @@ header h2 {
 }
 header div p {
   text-align: left;
-  padding-bottom: 4rem;
-  font-size: 2.5rem;
+  padding-bottom: 6rem;
+  font-size: 2rem;
   color: #0f0505;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
+header div a h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  background-color: #f18306;
+  color: black;
+}
 header img {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  border-radius: 3rem;
 }
 
 .navegador {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .logo {
@@ -53,11 +61,11 @@ header img {
 }
 
 body {
-  background-color: #f3e4d2;
+  background-color: #ffffff;
 }
 
 footer {
-  background-color: #f5dbb4;
+  background-color: #e97e04;
   font-family: "Kanit", sans-serif;
   font-size: 3rem;
   display: flex;
@@ -157,12 +165,21 @@ a:hover .imgActividades {
   margin: 6rem;
 }
 
+.margen {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
 .margen p {
-  background-color: #e78718;
+  font-family: "Kanit", sans-serif;
+  font-size: 3rem;
+  background-color: #f18306;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  color: aliceblue;
 }
 .margen a {
   text-decoration: none;
-  color: rgb(71, 47, 3);
+  color: rgb(245, 218, 178);
 }
 
 .album, .foto {
@@ -201,38 +218,55 @@ a:hover .imgActividades {
     height: 8rem;
     width: 8rem;
   }
-  .imgIntro div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .altura {
-    height: 30rem;
-  }
-  .alturaInicio {
-    height: 60rem;
-  }
 }
 .color {
   color: rgb(175, 79, 6);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .actividadMusculacion {
-  text-align: center;
-  margin: 2rem;
+  text-align: left;
+  margin: 0 6rem 3rem 3rem;
+}
+
+.altura {
+  height: 30rem;
 }
 
 section {
-  margin-top: 20rem;
-  margin-bottom: 20rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+section h1 {
+  margin: 3rem;
 }
 
-.margen {
-  margin-bottom: 20rem;
+.informacion {
   margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.informacion div {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.informacion div div {
+  text-align: center;
+  border: 5px solid rgb(0, 0, 0);
+  margin: 5rem auto;
+  background-color: #e97e04;
+  border-radius: 3rem;
+}
+.informacion div div img {
+  margin: 3rem;
+}
+.informacion div div p {
+  text-align: center;
+  margin: 3rem;
+  font-size: 3rem;
+  font-family: "Kanit", sans-serif;
+  color: white;
 }
 
 .producto {
@@ -261,23 +295,43 @@ section {
 }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  margin: 5rem auto;
+  font-size: 2.5rem;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  border: 6px solid #000000;
+  border-radius: 3rem;
+}
+.formulario button {
+  background-color: #f18306;
+  color: black;
+}
+.formulario .consulta, .formulario textarea, .formulario input {
+  background-color: #f18306;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+.nosotros {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
   margin: 5rem;
-  font-size: 3rem;
-  color: aliceblue;
-  font-family: "Rubik", sans-serif;
-  width: 70rem;
-  height: 40rem;
+  color: black;
 }
 
-@media screen and (min-width: 1150px) {
-  main p {
-    font-size: 2.5rem;
-    text-align: center;
-  }
+.album, .foto {
+  background-color: #f1ba7b;
+  margin-bottom: 5rem;
+}
+.album h2, .foto h2 {
+  color: black;
+}
+
+.foto {
+  border: 3px solid orangered;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }/*# sourceMappingURL=styles.css.map */
