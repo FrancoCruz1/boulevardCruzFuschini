@@ -15,33 +15,22 @@ a:hover .imgActividades {
 }
 
 .margen{
+    margin-bottom: $margenTB;
+    margin-top: $margenTB;
     p{
-        background-color: #e78718;
+        font-family: 'Kanit', sans-serif;
+        font-size: 3rem;
+        background-color: #f18306;
+        margin-top: $margenRL;
+        margin-bottom: $margenRL;
+        color: aliceblue;
     }
     a{
         text-decoration: none;
-        color: rgb(71, 47, 3);
+        color: rgb(245, 218, 178);
     }
 }
 
-.album{
-    background-color: #f1ba7b;
-    margin-bottom: $margenTB;
-    h2{
-        color: black
-    }
-}
-
-@mixin margen ($margenTB, $margenRL) {
-    margin-top: $margenTB;
-    margin-bottom: $margenRL;
-}
-
-.foto{
-    @extend .album;
-    border: 3px solid orangered;
-    @include margen (8rem, 8rem);
-}
 
 
 @media screen and (min-width: 600px) {
@@ -73,20 +62,6 @@ a:hover .imgActividades {
         width: 8rem;
     }
 
-    .imgIntro div{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .altura{
-        height: 30rem;
-    }
-
-    .alturaInicio{
-        height: 60rem;  
-    }
-
+   
     
 }
