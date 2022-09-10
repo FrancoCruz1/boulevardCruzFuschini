@@ -1,18 +1,29 @@
 .producto{
     margin-bottom: 3rem;
     background-color: rgb(24, 23, 23);
+    border-radius: 2rem;
 }
 
 .boton{
     margin: 2rem;
-    background-color: black;
+    background-color: rgb(175, 79, 6);
+
 }
 
 .info{
-    background-color: rgb(24, 23, 23);
+    background-color: black;
+    border-radius: 2rem;
 }
 
 .tarjeta{
-    background-color: rgb(92, 39, 2);
+    background-color: black;
+    border-radius: 2rem;
+}
+
+h5{
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem
 }
 
