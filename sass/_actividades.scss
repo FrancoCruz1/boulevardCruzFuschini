@@ -1,13 +1,17 @@
-.color {
-    color: rgb(175, 79, 6);
-    font-size: 3rem;
-    font-weight: 800;
-    text-align: center;
+a{
+    text-decoration: none;
+    .color {
+        color: rgb(175, 79, 6);
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+        margin-top: $margenTB;
+        margin-bottom: $margenTB;
+        transition: color 1s;
+    }
 }
-
-.actividadMusculacion{
-    text-align: left;
-    margin: 0 6rem 3rem 3rem;
+a:hover .color{
+    color: black;
 }
 
 .altura{
@@ -15,9 +19,23 @@
 }
 
 section{
-    @include margen (10rem, 10rem);
     h1{
-        margin: 3rem;
+        margin: $margenTB auto;
+        text-align: center;
+    }
+    div{
+        div{
+            div{
+                img{
+                    margin: $margenTB auto;
+                    border-radius: 3rem;
+                }
+                p{
+                    margin: $margenTB 0 2rem;
+                }
+                
+            }
+        }
     }
 }
 
@@ -32,7 +50,7 @@ section{
             text-align: center;
             border: 5px solid rgb(0, 0, 0);
             margin: $margenTB auto;
-            background-color: #e97e04;
+            background-color: rgb(175, 79, 6);
             border-radius: 3rem;
             img{
                 margin: 3rem;
@@ -41,7 +59,7 @@ section{
                 text-align: center;
                 margin: 3rem;
                 font-size: 3rem;
-                font-family: 'Kanit', sans-serif;
+                font-family: 'Anton', sans-serif;
                 color: white;
             }
         }
