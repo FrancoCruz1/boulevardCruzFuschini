@@ -11,14 +11,14 @@ a:hover .imgActividades {
 }
 
 .margen{
-    margin: $margenRL auto;
+    margin: $margenRL*2 auto;
     border: 5px solid black;
     border-radius: 2rem;
     text-align: center;
     background-color: rgb(175, 79, 6);
     p{
         font-family: 'Anton', sans-serif;
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: $margenRL;
         margin-bottom: $margenTB;
         color: white;
@@ -32,75 +32,80 @@ a:hover .imgActividades {
 .inicio{
     margin-top: $margenTB;
     div{
-        h2{
-            font-family: 'Kanit', sans-serif;
-            font-size: 3.5rem;
-            padding: 3rem;
-            text-align: center;
-            margin-top: $margenRL*2;
-        }
         div{
             h1{
-                color: white;
-                background-color: rgb(175, 79, 6);
-                font-size: 5rem;
+                color: rgb(59, 59, 58);
+                font-size: 4rem;
                 font-family: 'Kanit', sans-serif;
-                text-align: center;
+                text-align: left;
                 padding: 3rem;
                 margin-top: $margenTB;
                 margin-bottom: 7rem;
-                border-radius: 3rem;
+                strong{
+                    color: rgb(175, 79, 6);
+                }
             }
             p{
                 font-family: 'Hind', sans-serif;
-                font-size: 2.2rem;
-                margin-top: $margenTB;
-                margin-bottom: $margenTB;
+                font-size: 2.8rem;
+                margin-top: $margenRL;
+                margin-bottom: $margenRL;
+                text-align: center;
             }
             img{
-                border-radius: 3rem;
+                border-radius: 2rem;
                 margin-top: $margenTB;
             }
            
         }
+        h2{
+            font-family: 'Anton', sans-serif;
+            font-size: 4rem;
+            padding: 3rem;
+            text-align: center;
+            margin-top: $margenRL*2;
+            margin-bottom: $margenTB;
+            background-color: rgb(175, 79, 6);
+            color: white;
+            border-radius: 2rem;
+            border: 5px solid black;
+        }
     }
 }
 
-
-   
-
-
-
-
-@media screen and (min-width: 600px) {
-
-    a .imgActividades{
-        margin: 4rem;
-        transition: height 1s, width 1s;
-    }
-
-    a:hover .imgActividades {
-        height: 7rem;
-        width: 7rem;
-    }
-
-    .altura{
-        height: 60rem;
-    }
+.imgInicio:hover{
+    filter: grayscale(80%);
 }
-
-@media screen and (min-width: 1150px) {
-
-    a .imgActividades{
-        margin: 2rem;
-        transition: height 1s, width 1s;
-    }
-
-    a:hover .imgActividades {
-        height: 8rem;
-        width: 8rem;
-    }
-
    
+@media screen and (min-width: 1200px) {
+
+    .inicio{
+        div{
+            h2{
+                font-size: 3.5rem;
+            }
+            div{
+                p{
+                    text-align: left;
+                    font-size: 1.7rem;
+                }
+                h1{
+                    text-align: left;
+                    font-size: 5rem;
+                }
+                img{
+                    margin-top: $margenTB*2;
+                }
+            }
+        }
+       
+    }
+    .margen{
+        p{
+            font-size: 3rem;
+        }
+    }
+
     
 }
+

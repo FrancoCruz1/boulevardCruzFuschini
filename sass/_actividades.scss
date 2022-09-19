@@ -31,7 +31,9 @@ section{
                     border-radius: 3rem;
                 }
                 p{
-                    margin: $margenTB 0 2rem;
+                    margin: $margenTB auto;
+                    text-align: center;
+                    font-size: 1.6;
                 }
                 
             }
@@ -66,3 +68,17 @@ section{
     }
 }
 
+@media screen and (min-width: 1200px){
+    section{
+        div{
+            div{
+                div{
+                    p{
+                        text-align: left;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
