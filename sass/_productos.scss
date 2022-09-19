@@ -5,9 +5,13 @@
 }
 
 .boton{
-    margin: 2rem;
+    margin: 2rem auto;
     background-color: rgb(175, 79, 6);
-
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Hind', sans-serif;
 }
 
 .info{
@@ -21,8 +25,8 @@
 }
 
 h5{
-    font-family: 'Kanit', sans-serif;
-    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.3rem;
     text-align: center;
     margin: 2rem
 }

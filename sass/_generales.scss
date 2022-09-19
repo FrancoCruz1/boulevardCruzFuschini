@@ -45,37 +45,48 @@ a:hover .navegador{
 }
 
 
-
-
-.logo{
-    width: 12rem;
-    height: 12rem;
-}
-
 body{
     background-color: #ffffff;
 }
 
 footer{
     background-color: rgb(175, 79, 6);
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+    text-align: left;
+    div{
+        div{
+            div{
+                div{
+                    margin: $margenTB auto;
+                    a{
+                        color: white;
+                    }
+                    p{
+                        color: #ffffff;
+                    }
+                    }
+
+                    a:hover .pie{
+                        color: black;
+                    }
+                
+                }
+               
+                iframe{
+                    margin: $margenTB auto;
+                }
+            }
+        }
+    }
+
 
 .icon{
     width: 4rem;
     height: 4rem;
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 2rem;
-}
+
 
 p{
     font-family: 'Hind', sans-serif; 

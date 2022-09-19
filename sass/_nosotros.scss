@@ -1,19 +1,31 @@
 
     .nosotros{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.6rem;
+        h3{
+            font-family: 'Anton', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin: $margenTB auto;
+        }
+        p{
+            font-family: 'Hind', sans-serif;
+            font-size: 2.2rem;
             color: rgb(0, 0, 0);  
-            margin-top: $margenTB;
+            margin: $margenTB auto;
+            text-align: center;
+        }
     }
 
-    iframe{
-        margin: $margenTB 0 3rem;
+    .imgNosotros{
+        margin: $margenTB auto;
+        border-radius: 2rem;
     }
 
     .album{
-        background-color: #f1ba7b;
         margin-top: $margenTB;
         margin-bottom: $margenTB;
+        border: 5px solid rgb(175, 79, 6);
+        padding: 4rem;
+        border-radius: 2rem;
         h2{
             color: black;
             font-family: 'Kanit', sans-serif;
@@ -30,6 +42,7 @@
     
     .foto{
         @extend .album;
+        padding: 0;
         border: 3px solid orangered;
-        @include margen (8rem, 8rem);
+        @include margen (6rem, 6rem);
     }
