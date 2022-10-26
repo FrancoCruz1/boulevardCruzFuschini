@@ -10,7 +10,7 @@
     width: 100%;
     height: 4rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-family: 'Hind', sans-serif;
 }
 
@@ -22,7 +22,29 @@
 .tarjeta{
     background-color: black;
     border-radius: 2rem;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
 }
 
+.tablaTotal{
+    h2{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-family: 'Hind', sans-serif;
+        margin-bottom: 2rem;
+    }
+    .items{
+        font-family: 'Hind', sans-serif;
+        font-size: 1.8rem;
+    }
+    tbody{
+        @extend .items;
+    }
+}
 
-
+.filtros{
+    margin: 5rem auto;
+    text-align: center;
+}
