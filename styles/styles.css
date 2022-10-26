@@ -263,7 +263,7 @@ section div div div p {
   width: 100%;
   height: 4rem;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: "Hind", sans-serif;
 }
 
@@ -275,6 +275,25 @@ section div div div p {
 .tarjeta {
   background-color: black;
   border-radius: 2rem;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.tablaTotal h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-family: "Hind", sans-serif;
+  margin-bottom: 2rem;
+}
+.tablaTotal .items, .tablaTotal tbody {
+  font-family: "Hind", sans-serif;
+  font-size: 1.8rem;
+}
+.filtros {
+  margin: 5rem auto;
+  text-align: center;
 }
 
 .contacto {
