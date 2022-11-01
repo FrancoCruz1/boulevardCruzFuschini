@@ -281,11 +281,8 @@ section div div div p {
   margin-bottom: 4rem;
 }
 
-.tablaTotal h2 {
-  margin-bottom: 3rem;
-  font-size: 2rem;
-  font-family: "Hind", sans-serif;
-  margin-bottom: 2rem;
+.tablaTotal {
+  margin: 10rem auto;
 }
 .tablaTotal .items, .tablaTotal tbody {
   font-family: "Hind", sans-serif;
@@ -294,6 +291,33 @@ section div div div p {
 .filtros {
   margin: 5rem auto;
   text-align: center;
+}
+
+.botonFiltro {
+  width: 10rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-family: "Hind", sans-serif;
+}
+
+.botonP {
+  font-size: 1.5rem;
+  font-family: "Hind", sans-serif;
+}
+
+.botonC {
+  font-size: 1.5rem;
+  font-family: "Hind", sans-serif;
+}
+
+.botonV {
+  font-size: 1.5rem;
+  font-family: "Hind", sans-serif;
+}
+
+.botonB {
+  font-size: 1.5rem;
+  font-family: "Hind", sans-serif;
 }
 
 .contacto {
