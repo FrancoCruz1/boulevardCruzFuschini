@@ -2,6 +2,7 @@
 const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 let cont = document.getElementById('misProductos');
 const tablaCarro = document.getElementById('tablaCarro');
+const botonFinalizar = document.getElementById('btnFinalizarCompra');
 
 //Objetos de Productos
 class Productos {
@@ -94,35 +95,61 @@ function renderizarProductos (eleccionUsuario){
 //Funcion Agregar al Carrito
 function agregarAlCarrito(prodAgregado){
     carrito.push (prodAgregado);
-    añadirLS();
-    renderizarCarrito();
-    let totalCarrito = carrito.reduce((acumulador,producto)=>acumulador + producto.precio,0);
-    let infoTotal = document.getElementById('total');
-    infoTotal.innerText='Total a pagar $: '+totalCarrito;
+    Swal.fire({
+        title: prodAgregado.nombre,
+        text: 'Añadido al carrito',
+        imageUrl: prodAgregado.foto,
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: prodAgregado.nombre,
+        showConfirmButton: false,
+        timer: 1250
+      })
+        añadirLS();
+        renderizarCarrito();
 }
+
+function totalCarrito(){
+    totalCarro = carrito.reduce((acumulador,producto)=> acumulador + producto.precio,0);
+    let infoTotal = document.getElementById("total");
+    infoTotal.innerText="Total a pagar $: "+totalCarro;
+  }
 renderizarCarrito();
 
 //Funcion que recorre el carrito
 function renderizarCarrito(){
-    tablaCarro.innerHTML = '';
-    carrito.forEach(prodAgregado => {
-        const tprod = document.createElement('tr')
-        const content = `
+    console.table(carrito);
+    let tabla = '';
+    carrito.forEach((prodAgregado) => {
+      tabla = tabla +
+        `
             <tr>
                 <th scope="row">${prodAgregado.categoria}</th>
                 <td>${prodAgregado.nombre}</td>
                 <td>${prodAgregado.precio}</td>
-                <td id="tdCantidad">${prodAgregado.cantidad}</td>
-                <td><button id="btnEliminar" type="button" class="btn btn-danger">X</button></td>
+                <td>${prodAgregado.cantidad}</td>
+                <td><button onclick = "eliminarDelCarrito(${prodAgregado.id})" type="button" class="btn btn-danger">X</button></td>
             </tr>
-    `;
-       
-        tprod.innerHTML = content;
-        tablaCarro.append(tprod);
-        
-        
-        
+        `;
+        tablaCarro.innerHTML = tabla;
+        totalCarrito();
     })
+}
+
+//Finalizar Compra
+botonFinalizar.onclick = () => {
+    if(carrito.length==0){
+        Swal.fire({
+            title: 'Carrito vacio',
+            icon: 'error',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }else{
+        carrito.splice(0, carrito.length);
+        console.log(carrito);
+        tablaCarro.innerHTML='';
+    }
 }
 
 //Funcion para agregar al Storage
@@ -135,24 +162,9 @@ if(carritoGuardado){
     renderizarCarrito();
 }
 
-//Funcion para borrar producto del carrito
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Funcion para eliminar del carrito
+const eliminarDelCarrito = (id) => {
+    const producto = carrito.find((prodAgregado) => prodAgregado.id === id);
+    carrito.splice(carrito.indexOf(producto), 1);
+    renderizarCarrito();
+  };
