@@ -1,0 +1,22 @@
+[
+    {"categoria": "Proteina", "nombre": "Whey Protein Hardcore x4","foto": "../images/prote1.png","precio": 8600, "id": 101},
+    {"categoria": "Proteina", "nombre": "Whey Protein Gold Nutrition","foto": "../images/prote2.png","precio": 5200, "id": 102},
+    {"categoria": "Proteina", "nombre": "Whey Protein 30g Scientific Body","foto": "../images/prote3.png","precio": 20400, "id": 103},
+    {"categoria": "Proteina", "nombre": "Mammut Whey Protein Black","foto": "../images/prote4.png","precio": 21600, "id": 104},
+    {"categoria": "Proteina", "nombre": "Whey Protein Evlution Nutrition","foto": "../images/prote5.png","precio": 8200, "id": 105},
+    {"categoria": "Proteina", "nombre": "Whey Protein Gold Nutrition x3","foto": "../images/prote6.png","precio": 12500, "id": 106},
+    {"categoria": "Proteina", "nombre": "ENA Whey Protein","foto": "../images/prote7.png","precio": 8600, "id": 107},
+    {"categoria": "Proteina", "nombre": "ENA Whey Protein Double Rich","foto": "../images/prote8.png","precio": 4500, "id": 108},
+    {"categoria": "Creatina", "nombre": "Creatina Monohidrato Gentech","foto": "../images/creatina2.png","precio": 9100, "id": 109},
+    {"categoria": "Creatina", "nombre": "Creatina Monohidrato Ultra Tech","foto": "../images/creatina3.png","precio": 10300, "id": 110},
+    {"categoria": "Creatina", "nombre": "Creatina Pulver Monohidratada","foto":"../images/creatina4.png" ,"precio": 8100, "id": 111},
+    {"categoria": "Creatina", "nombre": "Creatina Star Nutrition Monohidrato","foto": "../images/creatina1.png","precio": 10200, "id": 112},
+    {"categoria": "Vasos mezcladores", "nombre": "Shaker Proteína Met-rx x5","foto": "../images/shaker1.png","precio": 9000, "id": 113},
+    {"categoria": "Vasos mezcladores", "nombre": "Shaker Proteína KICHLY","foto": "../images/shaker2.png","precio": 4500, "id": 114},
+    {"categoria": "Vasos mezcladores", "nombre": "Shaker Proteína Neon","foto": "../images/shaker3.png","precio": 2000, "id": 115},
+    {"categoria": "Vasos mezcladores", "nombre": "Shaker Proteína Negro","foto": "../images/shaker4.png","precio": 1000, "id":116},
+    {"categoria": "Barras protéicas", "nombre": "Barra proteica IRONBAR chocolate","foto": "../images/barraProte1.png","precio": 350, "id": 117},
+    {"categoria": "Barras protéicas", "nombre": "Barra proteica ENA frutilla","foto": "../images/barraProte2.png","precio": 350, "id": 118},
+    {"categoria": "Barras protéicas", "nombre": "Barra proteica ENA chocolate","foto": "../images/barraProte3.png","precio": 350, "id":119},
+    {"categoria": "Barras protéicas", "nombre": "Barra proteica IRONBAR coco","foto": "../images/barraProte5.png","precio": 350, "id": 120}
+]
