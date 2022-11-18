@@ -1,57 +1,28 @@
 //Variables y constantes
-const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 let cont = document.getElementById('misProductos');
 const tablaCarro = document.getElementById('tablaCarro');
 const botonFinalizar = document.getElementById('btnFinalizarCompra');
+const listaProd = [];
 
-
-
-//Filtrar productos
-const proteinas = listaProd.filter((prod)=>prod.categoria.includes('Proteina'));
-const creatinas =  listaProd.filter((prod)=>prod.categoria.includes('Creatina'));
-const vasos = listaProd.filter((prod)=>prod.categoria.includes('Vasos'));
-const barritas = listaProd.filter((prod)=>prod.categoria.includes('Barras'));
-
-for(let i = 0; i < 1; i++){
-    const botonProteina = document.getElementById('botonProteina');
-    botonProteina.addEventListener('click', function(){
-        renderizarProductos(proteinas);
-    }) 
-
-    const botonCreatina = document.getElementById('botonCreatina');
-    botonCreatina.addEventListener('click', function(){
-        renderizarProductos(creatinas);
-    })
-
-    const botonVasos = document.getElementById('botonVasos');
-    botonVasos.addEventListener('click', function(){
-        renderizarProductos(vasos);
-    })
-
-    const botonBarritas = document.getElementById('botonBarritas');
-    botonBarritas.addEventListener('click', function(){
-        renderizarProductos(barritas);
-    })
-}
 
 //Funcion Recorrer Productos
-function renderizarProductos (eleccionUsuario){
-    cont.innerHTML = " ";
-    for(const el of eleccionUsuario){
+function renderizarProductos (){
+    for(const producto of listaProd){
         cont.innerHTML += `
         <div class="card col-xl-4 tarjeta" style="width: 25%;">
-            <img src=${el.foto} class="card-img-top producto" alt="${el.nombre}">
+            <img src=${producto.foto} class="card-img-top producto" alt="${producto.nombre}">
             <div class="card-body info">
-                <h5 class="card-title">${el.nombre}</h5>
-                <p class="card-text">$ ${el.precio}</p>
-                <button id='btn${el.id}' class="btn btn-dark boton">Agregar al carrito</button>
+                <h5 class="card-title">${producto.nombre}</h5>
+                <p class="card-text">$ ${producto.precio}</p>
+                <button id='btn${producto.id}' class="btn btn-dark boton">Agregar al carrito</button>
             </div>
         </div>
         `;
     }
-    eleccionUsuario.forEach(el => {
-    document.getElementById(`btn${el.id}`).addEventListener('click',function(){
-        agregarAlCarrito(el);
+    listaProd.forEach(producto => {
+    document.getElementById(`btn${producto.id}`).addEventListener('click',function(){
+        agregarAlCarrito(producto);
         })
     })
 }
@@ -145,4 +116,13 @@ function eliminarDelCarrito(ev){
     total.innerText='Total a pagar: $ '+precios;
     //storage
     localStorage.setItem('carrito',JSON.stringify(carrito));
+}
+
+//GETJSON de productos
+async function obtenerJSON(){
+    const URLJSON="data.json"
+    const resp=await fetch(URLJSON)
+    const data=await resp.json()
+    listaProd = data;
+    renderizarProductos();
 }
