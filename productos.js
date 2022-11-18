@@ -7,25 +7,32 @@ const listaProd = [];
 
 
 //Funcion Recorrer Productos
-function renderizarProductos (){
-    for(const producto of listaProd){
-        cont.innerHTML += `
-        <div class="card col-xl-4 tarjeta" style="width: 25%;">
-            <img src=${producto.foto} class="card-img-top producto" alt="${producto.nombre}">
-            <div class="card-body info">
-                <h5 class="card-title">${producto.nombre}</h5>
-                <p class="card-text">$ ${producto.precio}</p>
-                <button id='btn${producto.id}' class="btn btn-dark boton">Agregar al carrito</button>
+function renderizarProductos() {
+    fetch('/data.json')
+        .then(resp => resp.json())
+        .then(listaProd => {
+            listaProd.forEach(producto => {
+                cont.innerHTML += `
+            <div class="card col-xl-4 tarjeta" style="width: 25%;">
+                <img src=${producto.foto} class="card-img-top producto" alt="${producto.nombre}">
+                <div class="card-body info">
+                    <h5 class="card-title">${producto.nombre}</h5>
+                    <p class="card-text">$ ${producto.precio}</p>
+                    <button id='btn${producto.id}' class="btn btn-dark boton">Agregar al carrito</button>
+                </div>
             </div>
-        </div>
-        `;
-    }
-    listaProd.forEach(producto => {
-    document.getElementById(`btn${producto.id}`).addEventListener('click',function(){
-        agregarAlCarrito(producto);
+            `;
+            })
+
+            listaProd.forEach(producto => {
+                document.getElementById(`btn${producto.id}`).addEventListener('click', function () {
+                    agregarAlCarrito(producto);
+                })
+            })
         })
-    })
+
 }
+renderizarProductos()
 
 //Funcion Agregar al Carrito
 function agregarAlCarrito(prodAgregado){
@@ -45,6 +52,7 @@ function agregarAlCarrito(prodAgregado){
         renderizarCarrito();
 }
 
+//Funcion que suma el total de precios a pagar
 function totalCarrito(){
     totalCarro = carrito.reduce((acumulador,producto)=> acumulador + producto.precio,0);
     let infoTotal = document.getElementById("total");
@@ -83,8 +91,16 @@ botonFinalizar.onclick = () => {
     }else{
         carrito.splice(0, carrito.length);
         console.log(carrito);
+        Swal.fire({
+            title: 'Compra realizada',
+            icon: 'success',
+            text: 'Se enviara un mail de confirmación',
+            showConfirmButton: false,
+            timer: 1500
+          })
         tablaCarro.innerHTML='';
     }
+    totalCarrito();
 }
 
 //Funcion para agregar al Storage
